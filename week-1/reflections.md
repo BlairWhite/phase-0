@@ -41,4 +41,10 @@ What are the 3 stages of a git change and how do you move a file from one stage 
 Write a handy cheatsheet of the commands you need to commit your changes? See above
 What is a pull request and how do you create and merge one? A pull request is when you merge the changes on your branch into the master branch. The workflow is as follows: Create a new branch from the command line > Check out the branch > Write and commit some code > Push the branch to GitHub > Issue a pull request to the master branch.
 Why are pull requests preferred when working with teams? Pull requests are preferred when working with teams because when the request is made, it presents a good opportunity for the code that the person is requesting to be added to be reviewed by the rest of the group. The owners of the master branch can test the code and make sure it is correct before adding it to the master branch.
+<<<<<<< HEAD
+=======
+This was my first introduction to git/GitHub. The instructions in the course were detailed so I did not have much trouble setting it up and using it. I learned all about the purpose of version control and the difference between git/GH.
+>>>>>>> 697928145d10c89dbc9614924e45cd735b2f57b3
+=======
 
+>>>>>>> master
