@@ -1,4 +1,4 @@
-![Website Plan](/week-2/blairswebsite.png)
+![Website Plan](imgs/BlairsWebsite.png)
 The six phases of web design are: information gathering, planning, design, development, testing/delivery, and maintenance.
 
 The goal of my site is to display my skills and information about myself to potential employers. My site will feature projects I have done, information about me, and a link to my blog.
