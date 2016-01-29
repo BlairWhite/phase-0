@@ -1,6 +1,6 @@
 ![Index Wireframe](imgs/wireframe-index.png)
 
-![Blog Wireframe](imgs/wireframe-blog-index.jpg)
+![Blog Wireframe](imgs/wireframe-blog-index.png)
 
 1. A wireframe is a basic layout of a site that allows you to plan how you want a user to process the information presented. It is a simple diagram that lays out header/body/footer, as well as buttons and links.
 
