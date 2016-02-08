@@ -1,0 +1,42 @@
+/*Note: There are three different ways to add background colors here.
+You can add them using a name (for common names), Hex, or RGB values.
+*/
+
+body {
+  background-color: gray;
+}
+
+#div-1 {
+  border: 1px solid black;
+  background-color: orange;
+  height:600px;
+  width:500px;
+  margin:auto;
+  position:relative;
+}
+
+#div-2 {
+  background-color: white;
+  position:absolute;
+  top:200px;
+  left:450px;
+  height:75px;
+  width:100px;
+
+}
+#div-3 {
+  background-color: #669900;
+  position:absolute;
+  top:200px;
+  right:450px;
+  height:75px;
+  width:100px;
+}
+#div-4 {
+  background-color:#3366ff;
+  position:absolute;
+  width:350px;
+  height:100px;
+  top:350px;
+  left:440px;
+}
