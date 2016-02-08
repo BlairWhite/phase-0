@@ -1,0 +1,73 @@
+
+
+* {
+  background: #ffffff;
+}
+
+.link {
+  margin-bottom: 25px;
+}
+
+a:visited {
+  color:#ff0000;
+}
+
+a {
+  color:#800080;
+}
+.navy {
+  color:#000080;
+}
+
+.left{
+  float:left;
+  width:50%;
+}
+
+.right {
+  float:right;
+  width:50%;
+}
+
+.heading {
+  font-size: 20px;
+  color:#000080;
+  font-weight: bold;
+  margin-bottom: -20px;
+  text-align:center;
+}
+
+.berkshire {
+  font-size:25px;
+  color:#000080;
+  font-weight: bold;
+  margin-bottom: -20px;
+  text-align:center;
+}
+
+img {
+    float:center;
+    border-top: 1px solid black;
+}
+
+.center {
+  text-align: center;
+  font-size:12px;
+}
+
+.hline {
+  border-bottom:1px solid black;
+  margin-top:15px;
+  padding-top: 10px;
+}
+
+/*
+When linking to an external file, it is important to know what type of file it is, its location, and its exact name.
+
+I used float to separate the bullet points into two columns, and used margin/padding to get things into place. It was difficult to get elements in the exact place I wanted them. I think once I have learned a little bit more about CSS and what tools to use in certain situations it will become second nature. I was not able to get my Geico image and text lowered and with a line separating it from the links.
+
+I used classes and "font-..." tools to get the text and links looking how I wanted. This was easier than getting the items into proper place.
+
+I used classes primarily. Classes were helpful in this situation because there were many different elements that I wanted to apply the same design features to.
+
+Comparing my code to the code base, my code was not quite as efficient as the code base. In some situations I combined a few tools to get my desired outcome, where the code base was able to do it more succinctly. I noticed that having the stylesheet separate does make it much more accessible to read code.*/
