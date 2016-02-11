@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html>
   ![1](imgs/3.4.1.png)
   ![2](imgs/3.4.2.png)
   ![3](imgs/3.4.3.png)
@@ -9,7 +10,7 @@
   ![8](imgs/3.4.8.png)
   ![9](imgs/3.4.9.png)
 
-<!--
+<p>
 Chrome's Devtools allows you to see everything in one DOM tree. It allows you to inspect elements, debug code, and improve positioning.
 
 You can resize elements on the DOM using CSS by changing the element rules in the style window.
@@ -21,5 +22,5 @@ Fixed positioning is relative to screen's viewport and doesn't move when the use
 
 Margin is the distance around the outer border of an element. Border is the width of the outer border. Padding is the distance around an element to its border.
 
-I thought this challenge could have done a better job of introducing DevTools and giving a broad explanation of how to use them.
--->
+I thought this challenge could have done a better job of introducing DevTools and giving a broad explanation of how to use them, as well as some examples.</p>
+<html>
