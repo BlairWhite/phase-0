@@ -4,52 +4,47 @@
 
 i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
+
 # Person 1's solution
 def my_array_finding_method(source, thing_to_find)
   source.select {|word| word.to_s.include?(thing_to_find)}
 end
 
-# p my_array_finding_method(i_want_pets, "t")
-
 def my_hash_finding_method(source, thing_to_find)
-  source.select {|k,v| v==thing_to_find}.keys
+source.select {|k,v| v==thing_to_find}.values
 end
 
-# p my_hash_finding_method(my_family_pets_ages, 3)
-
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
-#
+# .select
+## Returns an array containing all elements of an enumerator for which the given block returns a true value.
+# .to_s
+## Returns a string representation of what is called.
+# .inlude?()
+## Checks whether a particular item is included in the array.
+
 
 # Person 2
 def my_array_modification_method!(source, thing_to_modify)
-  source.map! do |element|
-    if element.class == Fixnum
-      element += thing_to_modify
-    else
-      element = element
+  source.map!  do |e|
+    if e.class == Fixnum
+      e = e + thing_to_modify
+    elsif e.class == String
+      e = e
     end
   end
-  source
+  return source
 end
-
-# p my_array_modification_method!(i_want_pets, 1)
 
 def my_hash_modification_method!(source, thing_to_modify)
-  source.keys.each do |v|
-    source[v] += thing_to_modify
+  source.keys.each do |k|
+    source[k] += thing_to_modify
   end
-  source
+  return source
 end
 
-# p my_hash_modification_method!(my_family_pets_ages, 2)
-
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
+# .map! ---> changes array in place (destructively)
+# .keys.each ---> enumerates through the keys in the hash
 
 
 # Person 3
@@ -90,24 +85,33 @@ Explanation
   A trick I learned for searching through the Ruby Docs is to look at the list on the left of the screen and just scan for a method that you think might work. Then navigate right to it and look at the code examples.
 =end
 
-
 # Person 5
 def my_array_splitting_method(source)
-  new_array = Array.new(source.partition { |element| element.is_a? Integer})
+  split_array = [source.find_all {|x| x.is_a?(Integer)}, source.find_all {|x| x.is_a?(Integer) == false}]
 end
-
-# p my_array_splitting_method(i_want_pets)
 
 def my_hash_splitting_method(source, age)
-  new_array = Array.new(source.partition { |k,v| v <= age})
+  split_hash_array = [source.select{|k,v| v <= age}.to_a, source.select{|k,v| v > age}.to_a]
 end
 
-# p my_hash_splitting_method(my_family_pets_ages, 4)
+# Identify and describe the Ruby method(s) you implemented.
+#For the array splitting method, I implemented two methods: .find_all and .is_a? .find_all grabs all elements in an array that meet the condition provided in the code block, and puts them into a new array. Here, I have two code blocks, one for the first array and one for the second, and they're mirro images of each other. The code block for the first .find_all is |x| x.is_a?(Integer). .is_a?(ObjectType) returns true if the object on which it's called is of the type specified. Here, it returned true if the element was an Integer. Thus, the .select method grabbed all the elements in source that were of object type Integer and put it into a new array. The second code block did the same thing, except it grabbed all elements that were NOT Integers and put them in a second array. Those two arrays were both returned by being put into the split_array, as follows: split_array = [codeblock1, codeblock2].
+
+#For the hash splitting method, I used two methods: the .select method and the .to_a method. The .select method works much like .find_all, except it's for hashes instead of arrays. It grabs all the elements satisfying the condition in the code block and puts them in a new hash. Here, the conditions for the two new hashes were |k,v| v <= age and v > age, respectively. That checked if the value of each hash pair was less than or equal to the age parameter. The .select method returns hashes, however, so I used the .to_a method, which just turns hashes into arrays, in the following format: {k1 => v1, k2 => v2} becomes [[k1, v1], [k2, v2]]. Fortunately that's the structure the method is supposed to return.
+
+
+# Release 1: Identify and describe the Ruby method you implemented. Teach your
+# accountability group how to use the methods.
+#See immediately above.
+#
+
 
 # Release 3: Reflect!
 # What did you learn about researching and explaining your research to others?
-#I learned that the Ruby docs are helpful for finding the appropriate solution, but it may take reading a few other sources to fully master the solution. Teaching others is best done by providing use cases and context for the Ruby method.
+#I learned that, at least for me, the easiest way to use the Ruby Docs is to think of what I want a method to do, then go through the sidebar that lists all the methods for a class and look for words that are similar to what I'm trying to do. That's how I found .find_all and .is_a?.
 #
-#
-#
+#I find that trying to explain my code to others is very similar to the reflection's I've been doing--I'm assuming others have about the same level of understanding as I do. This might work for now, when everyone I'm talking to has about the same level of exposure (and it's a pretty low level), but I should be careful when I have a higher degree of specialization, and make sure I can still break it down for a beginner.
+
+
+
 
