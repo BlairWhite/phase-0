@@ -16,6 +16,7 @@
 # 3. Refactored Solution
 class Die
   def initialize(sides)
+
     if sides < 1
       raise ArgumentError, "Die needs to have at least 1 side"
     else
