@@ -16,7 +16,7 @@ class NameData
   end
 end
 
-class Greeting
+class Greetings
   def initialize
     @name = NameData.new
   end
@@ -42,4 +42,4 @@ greet.hello
 #A writer method can modify an instance variable but not read it. Accessor can do both.
 #Accessor methods let you return or modify instance variables.
 #Yes you should use an accessor method because it can do both.
-#THese methods seem straightforward.
+#These methods seem straightforward, but the NameData/Greetings exercise seems to have nothing to do with what we just learned. I am very confused.
