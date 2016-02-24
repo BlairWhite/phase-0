@@ -1,8 +1,8 @@
 #Attr Methods
 
-# I worked on this challenge [by myself, with:]
+# I worked on this challenge by myself.
 
-# I spent [#] hours on this challenge.
+# I spent 1 hours on this challenge.
 
 # Pseudocode
 
@@ -11,15 +11,21 @@
 # Steps:
 
 class NameData
-
+  def initialize
+    @name = Blair
+  end
 end
 
-
-class Greetings
-
+class Greeting
+  def initialize
+    @name = NameData.new
+  end
+  def hello
+    puts "Hello, " + @name + ", welcome!"
+  end
 end
-
-
+greet = Greetings.new
+greet.hello
 
 # Reflection
 #1
@@ -31,20 +37,7 @@ end
 #3
 # This release has an attr_writer that is used to change an instance variable. It replaces an entire method created to do the same thing.
 #The output is the same, but it is more simple and requires one less method.
-#class NameData
-#  def initialize
-#    @name = Blair
-#  end
-#end
 
-#class Greeting
-#  def initialize
-#    @name = NameData.new
-#  end
-#  def greet
-#    puts "Hello, " + @name + ", welcome!"
-#  end
-#end
 #A reader method can return an instance variable but not modify it.
 #A writer method can modify an instance variable but not read it. Accessor can do both.
 #Accessor methods let you return or modify instance variables.
