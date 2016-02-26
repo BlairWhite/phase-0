@@ -1,13 +1,13 @@
 # Class Warfare, Validate a Credit Card Number
 
 
-# I worked on this challenge [by myself, with: ].
-# I spent [#] hours on this challenge.
+# I worked on this challenge with Theo Paul.
+# I spent 2 hours on this challenge.
 
 # Pseudocode
 
-# Input:
-# Output:
+# Input: Credit card number
+# Output: True or False
 # Steps:
 
 
@@ -18,7 +18,6 @@
 
 
 class CreditCard
-  @@total = 0
   def initialize(number)
     @number = number
     @total = 0
@@ -73,15 +72,13 @@ class CreditCard
     untouched.each do |i|
       untouched_sum += i
     end
-
-    @@total = untouched_sum + doubled_sum
-    @total = untouched_sum + doubled_sum
+  @total = untouched_sum + doubled_sum
   end
 
   def check_card
-    if @@total % 10 == 0
+    if @total % 10 == 0
       true
-    elsif @@total % 10 != 0
+    elsif @total % 10 != 0
       false
     end
   end
