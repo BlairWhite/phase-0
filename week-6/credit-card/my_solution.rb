@@ -76,6 +76,7 @@ class CreditCard
   end
 
   def check_card
+    make_array
     if @total % 10 == 0
       true
     elsif @total % 10 != 0
