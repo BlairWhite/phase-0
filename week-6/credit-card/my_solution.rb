@@ -8,7 +8,7 @@
 
 # Input: Credit card number
 # Output: True or False
-# Steps:
+# Steps: Take in credit card number, convert to string, split to array, double every other digit, sum untouched digits, split double-digit doubled numbers and sum them. Sum total. Return true of % 10 = 0, false otherwise.
 
 
 # Initial Solution
@@ -86,14 +86,7 @@ class CreditCard
 end
 
 
-
-# Refactored Solution
-
-
-
-
-
-
-
-
 # Reflection
+#The most difficult part of this challenge for Theo and I was getting the instance variables to change and work in our check-card method. I had to get help to figure out that we needed to include "make_array" in our check card method to include the updated @total.
+#I did not learn any new methods here. Perhaps my solution could be refactored to be more concise, but I think my process is easy to follow here and that is why I kept it.
+#My understanding of how instance variables are updated was greatly improved on this challenge.
