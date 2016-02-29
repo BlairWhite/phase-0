@@ -62,3 +62,7 @@ p serving_size_calc("cookie", 1)
 p serving_size_calc("THIS IS AN ERROR", 5)
 
 #  Reflection
+# I learned that having descriptive variable names is important, and that conditional statements should only be used when absolutely necessary for clarity.
+#I did not learn any new methods but I did learn a lot about driver code and effective testing, and that placing another method name inside of a new method allows you to access varibles between methods.
+#I learned that the hash[key_name] will return the value of that key.
+#My understanding of driver code and inter-method variable user was solidified.
