@@ -28,17 +28,17 @@
 
 # Display a column to the console
   #fill in the outline here
-  def display_column(board, column)
-    i = 0
-    while i < 5
-      puts board[i][column]
-      i += 1
-    end
+#  def display_column(board, column)
+ #   i = 0
+  #  while i < 5
+   #   puts board[i][column]
+    #  i += 1
+    #end
 
 
 # Display the board to the console (prettily)
   #fill in the outline here
-  ?
+
 
 # Initial Solution
 
@@ -49,11 +49,13 @@ class BingoBoard
   end
   def generate_let_num
     bingo_arr = ["B", "I", "N", "G", "O"]
-    #would be way easier to make bingo_arr an array of 0-4 and then select a random number that could be used as index number for column
     bingo_letter = bingo_arr.sample
+    #^Picks random BINGO letter
     random_num = rand(1...100)
+    #^picks random number
   end
-  def check_column (bingo_letter, random_num, bingo_arr, board)
+  def check_replace (bingo_letter, random_num, bingo_arr, board)
+    generate_let_num
     i = 0
     #goal of below is to find which index position the chosen BINGO letter is in. As I said above, making the bingo array 0-4 would eliminate this step
     while i < 5
@@ -62,13 +64,21 @@ class BingoBoard
       end
       i += 1
     end
-    #goal of below is to replace number with X
-    while i < 5
-      if board[i][bingo_column] == random_num
-        board[i][bingo_column] = 'X'
+    #goal of below is to replace bingo number with X
+    column_num = 0
+    while  < 5
+      if board[column_num][bingo_column] == random_num
+        board[column_num][bingo_column] = 'X'
       end
+      column_num += 1
+    end
+  def display_column(board, column)
+    i = 0
+    while i < 5
+      puts board[i][column]
       i += 1
     end
+  end
 
 end
 
