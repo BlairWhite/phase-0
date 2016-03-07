@@ -96,4 +96,13 @@ end
 
 #=======================================================================
 # Reflection Section
-#
+# #What are the differences between the two different hash syntaxes shown in the state_data file?
+#The hash is a nested hash. The state names are keys that point to values, which in themselves are hashes, with two key value pairs.
+# What does require_relative do? How is it different from require?
+#Require relative fetches data from another file located in the same folder as the current page. Require searches all the files on the computer and is more complicated to use.
+# What are some ways to iterate through a hash?
+#We used .each_pair to iterate through the hash. That looks at each key/value pair in the hash.
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+#We realized the variables did not need to be included as arguments in the functions.
+# What concept did you most solidify in this challenge?
+#I solidified my understanding of driver code, hash iteration, and nested functions.
