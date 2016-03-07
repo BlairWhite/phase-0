@@ -56,7 +56,12 @@ console.log(separateComma(1000));
 
 // Your Own Tests (OPTIONAL)
 
-
-
-
 // Reflection
+// What was it like to approach the problem from the perspective of JavaScript? Did you approach the problem differently?
+// Our approach was similar to what I had done in Ruby on the earlier challene. Our limited knowledge of JS made our options limited.
+// What did you learn about iterating over arrays in JavaScript?
+// I learned about the syntax for a for loop and how it can be used to iterate over an array.
+// What was different about solving this problem in JavaScript?
+// The for loop syntax is different, as is the variable definition.
+// What built-in methods did you find to incorporate in your refactored solution?
+// We used join, split, push and reverse.
