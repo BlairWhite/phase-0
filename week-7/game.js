@@ -21,32 +21,27 @@
 
 // Initial Code
 
-var grid_row = ['A', 'B', 'C', 'D', 'E']
-var grid_column = ['1', '2', '3', '4', '5']
+function position_comp_ship
+  var coordinates = ['A1', 'A2', 'A3', 'A4', 'B1', 'B2', 'B3', 'B4', 'C1', 'C2', 'C3', 'C4', 'D1', 'D2', 'D3', 'D4']
 
-function position_comp_ship(grid_row, grid_column)
 
 
 function prompt_user_place_ship
-  console.log("Enter grid coordinates for ship location. Ships Must be oriented horizontally or vertically")
+  console.log("Choose 3 coordinates to place ships")
 
 function
 
-var comp_1_coordinates = {
+var comp_ships = {
   comp_1_a = position_comp_ship()
   comp_2_b = position_comp_ship()
   hit_count = 0
 }
 
-var comp_2_coordinates = {
-  comp_2_a = position_comp_ship()
-  comp_2_b = position_comp_ship()
-  hit_count = 0
-}
 
-var user_1_coordinates = {
-  user_1_a = prompt_user_place_ship()
-  user_1_b = prompt_user_place_ship()
+var user_ships = {
+  user_1 = prompt_user_place_ship()
+  user_2 = prompt_user_place_ship()
+  user_3
   hit_count = 0
 }
 
