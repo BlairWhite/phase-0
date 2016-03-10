@@ -47,7 +47,6 @@ gradebook.Joseph.testScores = [80, 70, 70, 100];
 gradebook.Susan.testScores = [85, 80, 90, 90];
 gradebook.William.testScores = scores[2];
 gradebook.Elizabeth.testScores = [100, 90, 95, 85];
-console.log(gradebook)
 
 gradebook.addScore = function(name, score) {gradebook[name].testScores.push(score);};
 
@@ -69,14 +68,9 @@ gradebook.getAverage = function(name) {
 // __________________________________________
 // Reflect
 //
-// console.log(scores[2])
-// console.log(gradebook.William.testScores)
-
-
-
-
-
-
+// I learned that you can set the function name as a property of the object, and set the value of the name equal to the function code.
+// Iterating over nested arrays in JS is very similar to Ruby. You can access elements with a series of [] with index numbers. I used a while loop when I had to iterate over an array for .average.
+// I was unable to incorporate any new methods. This code was simple and I thought the most DRY solution was what I originally came up with.
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
