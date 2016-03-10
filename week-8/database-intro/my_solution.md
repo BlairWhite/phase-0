@@ -1,4 +1,4 @@
-<!-- 1.  SELECT * FROM states;
+1.  SELECT * FROM states;
 
 2. SELECT * FROM regions;
 
@@ -30,9 +30,9 @@
    ...> FROM regions
    ...> WHERE region_name LIKE '%central%';
 
- -->
  <img href="clueless">
- <!--
+
+
  A database is a place to store large amounts of information. They are searchable and can be updated.
 
  A one-to-many relationship is when one category of thing has many subqualities, but all of those subqualities are all part of the original category. IT is a one to many if you can say "____ belongs to a ____. ____ has many ____."
