@@ -26,6 +26,7 @@ function position_comp_ship
 
 
 
+
 function prompt_user_place_ship
   console.log("Choose 3 coordinates to place ships")
 
