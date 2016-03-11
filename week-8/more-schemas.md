@@ -1,7 +1,7 @@
-![one-to-one]("one-to-one.png")
+![one-to-one](one-to-one.png)
 # For my table, relationship status, marriage year can have a one-to-one relationship because it is possible to have a lot of information about a person's relationship status, but NULL for wedding year because they might not be married.
 
-![many-to-many]("many-to-many.png")
+![many-to-many](many-to-many.png)
 
 # One to one databases are used when things have singular relationships to one another. They are a pair. The example given was countries/capital cities. Each country has one capital city, and vice versa.
 #You would use a one-to-one database when you are storing information that has a singular relationship to other information.
